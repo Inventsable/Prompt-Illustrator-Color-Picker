@@ -55,7 +55,7 @@ function openColorPickerAndSetColor() {
       if (/textframe/i.test(item.typename)) {
         return !/(nocolor|null)/i.test(
           item.textRange.characterAttributes[
-            (bool ? "fill" : "strok") + "Color"
+            (bool ? "fill" : "stroke") + "Color"
           ] + ""
         );
       } else return item[(bool ? "fille" : "stroke") + "d"];
